@@ -33,6 +33,7 @@ A sample simulation game inspired from http://en.gameslol.net/adventure-capitali
 1. The architecture used here is the MVC architecture.
 2. The reason behind using it seperate the controlling of business running process from the model and view because although its a simple game but there are number of things happening simultaneously and in a short amount of time, So its better to keep the controller seperate.
 3. I used ES6 version of JavaScript that helps to code in JavaScript and in Object Oriented Approach that saved from using TypeScript and then converting it into the JavaScript.
+4. I used PixiJS as a canvas renderer because it's biggest advantage is its speed and that's what makes it perfect for a 2D game.
 
 ## Trade-offs
 1. If I had more time I will use a server as well and more secured way to store the data that is currently stored in localStorage.
