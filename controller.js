@@ -58,12 +58,8 @@ class Game {
         var text = this.getBuyBtnText(i);
         text && button.addChild(text);
 
-        // button.interactive = true;
         button.buttonMode = true;
         button
-            // Mouse & touch events are normalized into
-            // the pointer* events for handling different
-            // button events.
             .on('pointerdown', this.onButtonDown, this)
             .on('pointerup', this.onButtonUp, this)
             .on('pointerupoutside', this.onButtonUp, this)
@@ -88,12 +84,8 @@ class Game {
         text2.visible = false;
         text2 && button.addChild(text2);
 
-        // button.interactive = true;
         button.buttonMode = true;
         button
-            // Mouse & touch events are normalized into
-            // the pointer* events for handling different
-            // button events.
             .on('pointerdown', this.onButtonDown, this)
             .on('pointerup', this.onButtonUp, this)
             .on('pointerupoutside', this.onButtonUp, this)
@@ -233,7 +225,6 @@ class Game {
         meterText.visible = false;
         meterText && this.view.runBtn[i].addChild(meterText);
 
-        // btn.interactive = true;
         btn.buttonMode = true;
         btn.on('pointerdown', this.onButtonDown, this)
             .on('pointerup', this.onButtonUp, this)
@@ -273,7 +264,6 @@ class Game {
         var btnText = this.getUpgradeBtnText(i);
         btnText && btn.addChild(btnText);
 
-        // btn.interactive = true;
         btn.buttonMode = true;
         btn.on('pointerdown', this.onButtonDown, this)
             .on('pointerup', this.onButtonUp, this)
@@ -405,7 +395,7 @@ class Game {
         }
 
         /**
-         * Run timer during business run manually
+         * Run timer during business run
          */
         this.showRunMeter(i);
         timerValue = this.gameModel.businessObj.runTime[i];
